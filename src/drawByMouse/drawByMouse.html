@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>自定义组件</title>
+    <link rel="stylesheet" type="text/css" href="../../library/init.css">
+    <link rel="stylesheet" type="text/css" href="drawByMouse.css">
+</head>
+<body>
+	<button class="a">请点击</button>
+	<div style='width: 250px;height: 16px;'>这个是手绘板，目前貌似支持web端与移动端。</div>
+	<canvas id="boardNew" class="board" style="display: none;">您的浏览器不支持</canvas>
+
+    <script type="text/javascript" src="../../library/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="drawByMouse.js"></script>
+	<script>
+	    $(function(){
+	        $('.a').on('click',function(){
+	            showHandWrite();
+	        });
+	    });
+	</script>
+</body>
+</html>

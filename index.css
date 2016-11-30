@@ -1,0 +1,12 @@
+body {
+	min-width: 480px;
+	background-color: #ffffff;
+}
+.main-each-div {
+	width: calc( 100% - 20px );
+	height: 250px;
+	float: left;
+	background-color: #eeeeee;
+	margin: 10px 10px 0;
+	position: relative;
+}

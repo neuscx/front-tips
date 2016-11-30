@@ -1,0 +1,3 @@
+.main-each-div {
+	width: calc( 100% - 20px );
+}
