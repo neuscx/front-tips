@@ -57,3 +57,7 @@ hr {
     border: none;
     height: 1px;
 }
+
+iframe {
+	border: none;
+}

@@ -4,7 +4,7 @@ body {
 }
 .main-each-div {
 	width: calc( 100% - 20px );
-	height: 250px;
+	height: 300px;
 	float: left;
 	background-color: #eeeeee;
 	margin: 10px 10px 0;
