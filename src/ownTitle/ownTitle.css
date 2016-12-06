@@ -1,0 +1,15 @@
+.my-own-title {
+    display: none;
+    position: absolute;
+    background: -webkit-linear-gradient(#ffffff, #E4E5F0);
+    background: -o-linear-gradient(#ffffff, #E4E5F0);
+    background: -moz-linear-gradient(#ffffff, #E4E5F0);
+    background: linear-gradient(#ffffff, #E4E5F0);
+    border: 1px solid #7a7a7f;
+    border-radius: 2px;
+    padding: 1px 3px;
+    font-size: 12px;
+    box-shadow: 1px 1px 3px #999;
+    color: #333333;
+    z-index: 999;
+}

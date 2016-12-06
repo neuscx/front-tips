@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>自定义组件</title>
+    <link rel="stylesheet" type="text/css" href="../../library/init.css">
+    <link rel="stylesheet" type="text/css" href="ownTitle.css">
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            background-color: #ffffff;
+        }
+        tr {
+            width: 100%;
+        }
+        td {
+            width: 50%;
+            border: 1px solid #333333;
+            padding: 9px;
+        }
+    </style>
+</head>
+<body>
+    <span style="padding: 4px;display: inline-block;">全是bug，我会回来重写的！！</span>
+    <table id="thisTable">
+        <tr><td class="theName" owntitle="1111111111">1111111111</td><td class="theContent" owntitle="1111111111">1111111111</td></tr>
+        <tr><td class="theName" owntitle="2222222222">2222222222</td><td class="theContent" owntitle="2222222222">2222222222</td></tr>
+        <tr><td class="theName" owntitle="3333333333">3333333333</td><td class="theContent" owntitle="3333333333">3333333333</td></tr>
+        <tr><td class="theName" owntitle="4444444444">4444444444</td><td class="theContent" owntitle="4444444444">4444444444</td></tr>
+        <tr><td class="theName" owntitle="5555555555">5555555555</td><td class="theContent" owntitle="5555555555">5555555555</td></tr>
+        <tr><td class="theName" owntitle="6666666666">6666666666</td><td class="theContent" owntitle="6666666666">6666666666</td></tr>
+        <tr><td class="theName" owntitle="7777777777">7777777777</td><td class="theContent" owntitle="7777777777">7777777777</td></tr>
+        <tr><td class="theName" owntitle="8888888888">8888888888</td><td class="theContent" owntitle="8888888888">8888888888</td></tr>
+        <tr><td class="theName">9999999999</td><td class="theContent">9999999999</td></tr>
+    </table>
+    <script type="text/javascript" src="../../library/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="ownTitle.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("body").ownTitle({
+                modalName: "main",
+                parentDom: "#thisTable td"
+            });
+        })
+    </script>
+</body>
+</html>
