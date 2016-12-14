@@ -6,7 +6,7 @@ var params = {
 	flag: false
 };
 var getCss = function(o,key){
-	return o.currentStyle? o.currentStyle[key] : document.defaultView.getComputedStyle(o,false)[key]; 	
+	return o.currentStyle? o.currentStyle[key] : document.defaultView.getComputedStyle(o,false)[key];
 };
 
 var startDrag = function(bar, target, callback){
@@ -49,5 +49,5 @@ var startDrag = function(bar, target, callback){
 		if (typeof callback === "function") {
 			callback(parseInt(params.left) + disX, parseInt(params.top) + disY);
 		}
-	}	
+	}
 };
