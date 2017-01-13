@@ -15,4 +15,6 @@ Some tips. Just for fun.
 
 1. 手绘板 https://neuscx.github.io/front-tips/index.html
 
-2. div加拖动边框插件 https://neuscx.github.io/front-tips/index.html#divCanChangeSize
+2. div加拖拽边框放大缩小插件 https://neuscx.github.io/front-tips/index.html#divCanChangeSize
+
+3. 拖动div移动插件 https://neuscx.github.io/front-tips/index.html#dragDiv
