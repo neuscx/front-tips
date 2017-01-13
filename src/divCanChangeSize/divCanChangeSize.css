@@ -1,0 +1,97 @@
+.divCanChangeSize-around-div {
+    position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.divCanChangeSize-drag-top {
+    top: 0;
+	left: 0;
+	height: 5px;
+	z-index: 99;
+	cursor: n-resize;
+}
+.divCanChangeSize-drag-left {
+    top: 0;
+	left: 0;
+	width: 5px;
+	z-index: 99;
+	cursor: w-resize;
+}
+.divCanChangeSize-drag-right {
+	right: 0;
+	top: 0;
+	width: 5px;
+	z-index: 99;
+	cursor: e-resize;
+}
+.divCanChangeSize-drag-bottom {
+	bottom: 0;
+	left: 0;
+	height: 5px;
+	z-index: 99;
+	cursor: s-resize;
+}
+.divCanChangeSize-drag-top-left {
+	top: 0;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	z-index: 101;
+	cursor: nw-resize;
+}
+.divCanChangeSize-drag-top-right {
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 5px;
+	z-index: 101;
+	cursor: ne-resize;
+}
+.divCanChangeSize-drag-bottom-left {
+	bottom: 0;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	z-index: 101;
+	cursor: sw-resize;
+}
+.divCanChangeSize-drag-bottom-right {
+	bottom: 0;
+	right: 0;
+	width: 5px;
+	height: 5px;
+	z-index: 101;
+	cursor: se-resize;
+}
+/*e-resize	此光标指示矩形框的边缘可被向右移动（东）。
+n-resize	此光标指示矩形框的边缘可被向上移动（北）。
+s-resize	此光标指示矩形框的边缘可被向下移动（南）。
+w-resize	此光标指示矩形框的边缘可被向左移动（西）。
+ne-resize	此光标指示矩形框的边缘可被向上及向右移动（北/东）。
+nw-resize	此光标指示矩形框的边缘可被向上及向左移动（北/西）。
+se-resize	此光标指示矩形框的边缘可被向下及向右移动（南/东）。
+sw-resize	此光标指示矩形框的边缘可被向下及向左移动（南/西）。*/
+.divCanChangeSize-cursor-top {
+	cursor: n-resize;
+}
+.divCanChangeSize-cursor-left {
+	cursor: w-resize;
+}
+.divCanChangeSize-cursor-right {
+	cursor: e-resize;
+}
+.divCanChangeSize-cursor-bottom {
+	cursor: s-resize;
+}
+.divCanChangeSize-cursor-top-left {
+	cursor: nw-resize;
+}
+.divCanChangeSize-cursor-top-right {
+	cursor: ne-resize;
+}
+.divCanChangeSize-cursor-bottom-left {
+	cursor: sw-resize;
+}
+.divCanChangeSize-cursor-bottom-right {
+	cursor: se-resize;
+}

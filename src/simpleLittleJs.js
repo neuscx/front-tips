@@ -79,4 +79,26 @@ $(function() {
     //     flashTitlePlayer.stop();
     // }
     // flashTitle("【a】");
+
+
+    // if (!String.format) {
+    //     String.format = function(format) {
+    //         var args = Array.prototype.slice.call(arguments, 1);
+    //         return format.replace(/{(\d+)}/g, function(match, number) { 
+    //             return typeof args[number] != 'undefined' ? args[number] : match;
+    //         });
+    //     };
+    // }
+    // String.format('{0} is dead, but {1} is alive! {0} {2}', 'ASP', 'ASP.NET');
+    // // First, checks if it isn't implemented yet.
+    // // 第二种方法，上一种为写新的方法再调用，后一种为继承并新增了一个String的方法。
+    // if (!String.prototype.format) {
+    //     String.prototype.format = function() {
+    //         var args = arguments;
+    //         return this.replace(/{(\d+)}/g, function(match, number) { 
+    //             return typeof args[number] != 'undefined' ? args[number] : match;
+    //         });
+    //     };
+    // }
+    // "{0} is dead, but {1} is alive! {0} {2}".format("ASP", "ASP.NET");
 });

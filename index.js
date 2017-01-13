@@ -15,8 +15,22 @@ $(function() {
                 }
             });
         },
+        '#divCanChangeSize': function(){
+            $("body").empty();
+            $.ajax({
+                type: "get",
+                url: "src/divCanChangeSize/divCanChangeSize.html",
+                success: function (response) {
+                    $("body").append(response);
+					$("#box").divCanChangeSize();
+                },
+                error: function (response) {
+                    console.log("error");
+                }
+            });
+        },
         // '#/show/(.*)': function(id){
-        //     console.log('show', id); 
+        //     console.log('show', id);
         // }
     }, function(){
         console.log('default router');
