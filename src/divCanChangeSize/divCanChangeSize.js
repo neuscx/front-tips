@@ -66,7 +66,7 @@
                         moveY = self.yPosition - nowYPosition;
                         marginTop = thisMarginTop - moveY;
                     } else if (direction === 'bottom-left') {
-                        moveX = nowXPosition - self.xPosition;
+                        moveX = self.xPosition - nowXPosition;
                         moveY = nowYPosition - self.yPosition;
                         marginLeft = thisMarginLeft - moveX;
                     } else if (direction === 'bottom-right') {
