@@ -27,6 +27,7 @@ var startDrag = function(bar, target, callback){
 		var e = event;
 		params.currentX = e.clientX;
 		params.currentY = e.clientY;
+		window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
 	};
 	document.onmouseup = function(){
 		params.flag = false;	
