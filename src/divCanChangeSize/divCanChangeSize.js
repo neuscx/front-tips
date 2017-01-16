@@ -18,10 +18,7 @@
         if ($dom.css("overflow") === "visible" && $dom.css("overflow-x") === "visible" && $dom.css("overflow-y") === "visible") {
             $dom.css("overflow", "hidden");
         }
-        $("html").css({
-            "width": "100%",
-            "height": "100%"
-        })
+        $("html").css({"width": "100%", "height": "100%"});
         
         function renderDirection (direction) {
             var self = this;
@@ -46,32 +43,41 @@
                     var thisMarginTop = parseFloat($dom.css("margin-top"));
                     var thisWidth = $dom.width();
                     var thisHeight = $dom.height();
-                    if (direction === "top") {
-                        moveY = self.yPosition - nowYPosition;
-                        marginTop = thisMarginTop - moveY;
-                    } else if (direction === 'bottom') {
-                        moveY = nowYPosition - self.yPosition;
-                    } else if (direction === 'right') {
-                        moveX = nowXPosition - self.xPosition;
-                    } else if (direction === 'left') {
-                        moveX = self.xPosition - nowXPosition;
-                        marginLeft = thisMarginLeft - moveX;
-                    } else if (direction === 'top-left') {
-                        moveX = self.xPosition - nowXPosition;
-                        moveY = self.yPosition - nowYPosition;
-                        marginLeft = thisMarginLeft - moveX;
-                        marginTop = thisMarginTop - moveY;
-                    } else if (direction === 'top-right') {
-                        moveX = nowXPosition - self.xPosition;
-                        moveY = self.yPosition - nowYPosition;
-                        marginTop = thisMarginTop - moveY;
-                    } else if (direction === 'bottom-left') {
-                        moveX = self.xPosition - nowXPosition;
-                        moveY = nowYPosition - self.yPosition;
-                        marginLeft = thisMarginLeft - moveX;
-                    } else if (direction === 'bottom-right') {
-                        moveX = nowXPosition - self.xPosition;
-                        moveY = nowYPosition - self.yPosition;
+                    switch (direction){
+                        case "top":
+                            moveY = self.yPosition - nowYPosition;
+                            marginTop = thisMarginTop - moveY;
+                            break;
+                        case 'bottom':
+                            moveY = nowYPosition - self.yPosition;
+                            break;
+                        case 'right':
+                            moveX = nowXPosition - self.xPosition;
+                            break;
+                        case 'left':
+                            moveX = self.xPosition - nowXPosition;
+                            marginLeft = thisMarginLeft - moveX;
+                            break;
+                        case 'top-left':
+                            moveX = self.xPosition - nowXPosition;
+                            moveY = self.yPosition - nowYPosition;
+                            marginLeft = thisMarginLeft - moveX;
+                            marginTop = thisMarginTop - moveY;
+                            break;
+                        case 'top-right':
+                            moveX = nowXPosition - self.xPosition;
+                            moveY = self.yPosition - nowYPosition;
+                            marginTop = thisMarginTop - moveY;
+                            break;
+                        case 'bottom-left':
+                            moveX = self.xPosition - nowXPosition;
+                            moveY = nowYPosition - self.yPosition;
+                            marginLeft = thisMarginLeft - moveX;
+                            break;
+                        case 'bottom-right':
+                            moveX = nowXPosition - self.xPosition;
+                            moveY = nowYPosition - self.yPosition;
+                            break;
                     }
                     finalWidth = thisWidth + moveX;
                     finalHeight = thisHeight + moveY;
